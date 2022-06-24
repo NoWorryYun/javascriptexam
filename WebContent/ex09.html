@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+	<h2>함수(function)</h2>
+
+</body>
+
+<script type="text/javascript">
+	//(2)	//후순위 <  2번째로 읽혀서 선택됨
+	var test = function(){
+		console.log("test 익명함수");
+	}
+	
+	//(1)	//우선순위 < 	맨처음 읽혀짐
+	function test(){
+		console.log("test 함수");
+	}
+	
+	test();
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바 스크립트</h1>	
+
+	<h2>함수(function)</h2>
+	
+</body>
+
+	<script type="text/javascript">
+
+	
+	//이름있는 함수(선언적 함수) ---> 정의부터 조사된다. (사용 부분의 위치를 변경해서 실험)  // function을 먼저 조사 //순서 상관 없음
+	//정의
+	function testA(){
+		console.log("testA 함수입니다.");
+	}
+	
+	//실행	testA 이름, 	()실행
+	testA();
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	//이름이 없는 함수(익명함수) ---> 실제로 이름이 없으면 사용 X
+	//							(만들고 바로 사용) 변수에 할당해서 변수이름으로 사용
+	var testB = function(){
+		console.log("익명함수입니다.");
+	}
+	
+
+	//변수에 function이 대입되고 난 이후에 사용해야 함(순서가 중요)
+	testB();	//
+	
+	
+	
+	var no = 4;
+	var str = '안녕';
+	/*
+	(((var a <-- number string boolean function))) << function도 자료형으로 쓸 수 있음
+	*/
+	
+	
+	
+	
+	</script>
+
+
+
+
+</html>

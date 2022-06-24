@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>자바 스크립트</h1>
+
+	<h2>함수(function)</h2>
+
+</body>
+
+	<script type="text/javascript">
+	
+	/*
+	var name = "global";
+	
+	//함수 정의
+	function checkScope(){
+		var name = "local";
+		console.log(name);
+	}
+	
+	checkScope();		//"local"
+	console.log(name);	//"global"
+	*/
+	
+	//실험2
+	var name = "global";
+	
+	//정의	
+	function checkScope(){
+		 name = "local";		//전역 변수에 name으로 사용됨
+		 name2 = "로컬";			//(전역변수로)암묵적으로 새 변수가 선언됨 var name2
+	}
+	
+	checkScope();			
+	console.log(name);		// (원래생각)"global" >> "local"
+	console.log(name2);		// (원래생각)에러 >> "로컬"
+	
+	//변수선언할때 var name; name;이 서로 같다.
+	
+	</script>
+</html>
