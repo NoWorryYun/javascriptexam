@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table border="1">
+		<tr>
+			<td id="display" colspan=3 width="210" height="60" align="right"></td>
+			<td id="calculate"width="70" height="60" align="center">=</td>
+		</tr>
+		<tr>
+			<td id="seven"width="70" height="60" align="center">7</td>
+			<td id="eight"width="70" height="60" align="center">8</td>
+			<td id="nine"width="70" height="60" align="center">9</td>
+			<td id="plus"width="70" height="60" align="center">+</td>
+		</tr>
+		<tr>
+			<td id="four" width="70" height="60" align="center">4</td>
+			<td id="five" width="70" height="60" align="center">5</td>
+			<td id="six" width="70" height="60" align="center">6</td>
+			<td id="minus" width="70" height="60" align="center">-</td>
+		</tr>
+		<tr>
+			<td id="one" width="70" height="60" align="center">1</td>
+			<td id="two" width="70" height="60" align="center">2</td>
+			<td id="three" width="70" height="60" align="center">3</td>
+			<td id="multi" width="70" height="60" align="center">*</td>
+		</tr>
+		<tr>
+			<td id="clear" width="70" height="60" align="center">C</td>
+			<td id="zero" width="70" height="60" align="center">0</td>
+			<td id="dot" width="70" height="60" align="center">.</td>
+			<td id="div" width="70" height="60" align="center">/</td>
+		</tr>
+	</table>
+
+</body>
+	<script type="text/javascript">
+	
+		//설정
+		window.onload = function(){
+			var zero = document.getElementById("zero");
+			var one = document.getElementById("one");
+			var two = document.getElementById("two");
+			var three = document.getElementById("three");
+			var four = document.getElementById("four");
+			var five = document.getElementById("five");
+			var six = document.getElementById("six");
+			var seven = document.getElementById("seven");
+			var eight = document.getElementById("eight");
+			var nine = document.getElementById("nine");
+			var plus = document.getElementById("plus");
+			var minus = document.getElementById("minus");
+			var multi = document.getElementById("multi");
+			var div = document.getElementById("div");
+			var dot = document.getElementById("dot");
+			var display = document.getElementById("display");
+			var calculate = document.getElementById("calculate");
+			var clear = document.getElementById("clear");
+			
+			//정의하기
+			zero.onclick = function(){
+				console.log("zero");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "0";
+				} else{
+					display.innerHTML = display.innerHTML+"0";
+				};
+			};
+			one.onclick = function(){
+				console.log("one");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "1";
+				} else {
+					display.innerHTML = display.innerHTML+"1";
+				};
+			};
+			two.onclick = function(){
+				console.log("two");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "2";
+				} else {
+					display.innerHTML = display.innerHTML+"2";
+				};
+			};
+			three.onclick = function(){
+				console.log("three");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "3";
+				} else {
+					display.innerHTML = display.innerHTML+"3";
+				};
+			};
+			four.onclick = function(){
+				console.log("four");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "4";
+				} else {
+					display.innerHTML = display.innerHTML+"4";
+				};
+			};
+			five.onclick = function(){
+				console.log("five");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "5";
+				} else {
+					display.innerHTML = display.innerHTML+"5";
+				};
+			};
+			six.onclick = function(){
+				console.log("six");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "6";
+				} else {
+					display.innerHTML = display.innerHTML+"6";
+				};
+			};
+			seven.onclick = function(){
+				console.log("seven");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "7";
+				} else {
+					display.innerHTML = display.innerHTML+"7";
+				};
+			};
+			eight.onclick = function(){
+				console.log("eight");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "8";
+				} else {
+					display.innerHTML = display.innerHTML+"8";
+				};
+			};
+			nine.onclick = function(){
+				console.log("nine");
+				if(display.innerHTML == "0"){
+					display.innerHTML = "9";
+				} else {
+					display.innerHTML = display.innerHTML+"9";
+				};
+			};
+			plus.onclick = function(){
+				console.log("plus");
+				if(display.innerHTML == "+"){
+					display.innerHTML = "+";
+				} else if(display.innerHTML == "0"){
+					display.innerHTML = "+";
+				} else if(){
+						
+				}else{
+					display.innerHTML = display.innerHTML + "+";
+				};
+			};
+			minus.onclick = function(){
+				console.log("minus");
+				display.innerHTML = display.innerHTML+"-";
+			};
+			multi.onclick = function(){
+				console.log("multi");
+				display.innerHTML = display.innerHTML+"*";
+			};
+			div.onclick = function(){
+				console.log("div");
+				display.innerHTML = display.innerHTML+"/";
+			};
+			dot.onclick = function(){
+				console.log("dot");
+				display.innerHTML = display.innerHTML+".";
+			};
+			calculate.onclick = function(){
+				console.log("calculate");
+			};
+			clear.onclick = function(){
+				console.log("clear");
+				display.innerHTML = null;
+			}
+		};
+	
+	</script>
+	
+
+</html>
