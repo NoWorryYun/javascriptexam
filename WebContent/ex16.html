@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script type="text/javascript" src="./jquery-1.12.4.js">
+
+	
+
+</script>
+
+
 </head>
 <body>
 
@@ -29,14 +37,28 @@
 			onclick: function(){}
 		};
 		*/
+		
+		/*
+		//자바스크립트로 이벤트 처리
 		var testButton = document.getElementById("btn");	//id=btn DOM --> 자바스크립트 객체화
 		var testArea = document.getElementById("display");	//id=display DOM --> 자바스크립트 객체화
 		testButton.onclick = function(){
 			console.log("btn click");
 			testArea.innerHTML = '<font color = "blue">황일영</font>';
-			
-			
 		};
+		*/
+		
+		//jquery 이벤트
+		var testButton = $("#btn");
+		var testArea = $("#display");
+		
+		testButton.on("click", function(){
+			console.log("jquery");
+			
+			testArea.html('<font color = "blue">황일영</font>');
+		});
+		
+		
 	};	
 	
 	</script>
